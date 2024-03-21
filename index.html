@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="./dist/output.css" rel="stylesheet" />
+    <script src="./node_modules/preline/dist/preline.js"></script>
+    <link rel="icon"   href="./images/home-right.png">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "EyGONMyBk8HW8qBwm",
+            });
+        })();
+    </script>
+    <script src="script.js"></script>  
+      <title>Portfolio | Basil-adra</title>
+  </head>
+  <body>
+    <script>
+      AOS.init();
+    </script>
+    <div class="bg-white ">
+      <header class="bg-[#FCF8F1] bg-opacity-30 fixed top-0 w-full z-10">
+        <div class="px-4 mx-auto sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between h-16 lg:h-20 ">
+            <div  class="flex-shrink-0">
+              <a href="#" title="" class="flex">
+                <img
+                  class="w-auto h-8"
+                  src="./images/T22.png"
+                  alt=""
+                />
+              </a>
+            </div>
+
+            <button
+              type="button"
+              class="inline-flex p-2 text-black transition-all duration-200 rounded-md lg:hidden focus:bg-gray-100 hover:bg-gray-100"
+            >
+              <!-- Menu open: "hidden", Menu closed: "block" -->
+              <svg
+                class="block w-6 h-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 8h16M4 16h16"
+                ></path>
+              </svg>
+
+              <!-- Menu open: "block", Menu closed: "hidden" -->
+              <svg
+                class="hidden w-6 h-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+
+            <div
+              class="hidden  lg:flex lg:items-center lg:justify-center lg:space-x-10"
+            >
+              <a
+                href="#"
+                title=""
+                class="transition-all duration-200 text-yellow-400 hover:underline text-base font-semibold tracking-wider"
+              >
+                Home
+              </a>
+
+              <a
+                href="#About"
+                title=""
+                class="transition-all duration-200 hover:text-yellow-400 hover:underline text-base font-semibold tracking-wider"
+              >
+                About
+              </a>
+
+              <a
+                href="#skills"
+                title=""
+                class="transition-all duration-200 hover:text-yellow-400 hover:underline text-base font-semibold tracking-wider"
+              >
+                Skills
+              </a>
+
+              <a
+                href="#projects"
+                title=""
+                class="transition-all duration-200 hover:text-yellow-400 hover:underline text-base font-semibold tracking-wider"
+              >
+                Projects
+              </a>
+            </div>
+
+            <a
+              href="#contact"
+              title=""
+              class="hidden lg:inline-flex items-center justify-center px-5 py-2.5 text-base transition-all duration-200 hover:bg-yellow-300 hover:text-black focus:text-black focus:bg-yellow-300 font-semibold text-white bg-black rounded-full"
+              role="button"
+            >
+              Hire Me
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <section class="bg-[#FCF8F1] bg-opacity-30 py-10 sm:py-16 lg:py-24">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div class="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
+            <div>
+              <p class="mt-4 text-2xl text-black xl:text-4xl animate__animated animate__zoomInRight">Hi, i'm</p>
+              <h1 class="text-xl font-bold text-black sm:text-6xl xl:text-8xl animate__animated animate__zoomInRight">
+                Basil Al-adra
+              </h1>
+              <p
+                class="text-xl font-bold tracking-wider text-blue-600 uppercase mt-4 animate__animated animate__bounceInLeft"
+              >
+                Full Stack Web Developer
+              </p>
+              <ul class="flex items-center mt-5 space-x-3 md:order-3 sm:mt-10">
+                <li>
+                  <a data-aos="zoom-in"
+                    href="https://x.com/basil11602238?s=11" target="_blank"
+                    title=""
+                    class="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-[#179cf0] rounded-full w-10 h-10 focus:bg-[#179df028] hover:text-white focus:text-white hover:bg-[#179df037] hover:border-[#179df037] focus:border-[#179df037]"
+                  >
+                    <svg
+                      class="w-6 h-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="#179cf0"
+                    >
+                      <path
+                        d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+
+                <li>
+                  <a data-aos="zoom-in"
+                    href="https://www.facebook.com/profile.php?id=100005873560461" target="_blank"
+                    title=""
+                    class="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-[#0866ff] rounded-full w-10 h-10 focus:bg-[#0867ff33] hover:text-[#0867ff33] focus:text-white hover:bg-[#0867ff33] hover:border-[#0867ff33] focus:border-orange-600"
+                  >
+                    <svg
+                      class="w-6 h-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="#0866ff"
+                    >
+                      <path
+                        d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+
+                <li>
+                  <a data-aos="zoom-in"
+                    href="https://www.instagram.com/ba.sil7443/" target="_blank"
+                    title=""
+                    class="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-[#e600aa] rounded-full w-10 h-10 focus:bg-[#e600a932] hover:text-white focus:text-white hover:bg-[#e600a932] hover:border-[#e600a932] focus:border-orange-600"
+                  >
+                    <svg
+                      class="w-6 h-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="#e600aa"
+                    >
+                      <path
+                        d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"
+                      ></path>
+                      <circle cx="16.806" cy="7.207" r="1.078"></circle>
+                      <path
+                        d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+
+                <li>
+                  <a data-aos="zoom-in"
+                    href="https://github.com/githubbasiladra" target="_blank"
+                    title=""
+                    class="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-10 h-10 focus:bg-orange-600 hover:text-white focus:text-white hover:bg-gray-800 hover:border-gray-800 focus:border-gray-800"
+                  >
+                    <svg
+                      class="w-6 h-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <a data-aos="zoom-in-right"
+                href="https://drive.google.com/file/d/1vCm_uvykCEw8tVxKQEjwbqQ-Oyi5Bkxp/view?usp=sharing" target="_blank"
+                title=""
+                class="inline-flex items-center px-6 py-4 mt-2 font-semibold text-black transition-all duration-200 bg-yellow-300 rounded-full lg:mt-10 hover:bg-yellow-400 focus:bg-yellow-400"
+                role="button"
+              >
+                Download CV
+                <svg
+                  class="w-6 h-6 ml-8 -mr-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </a>
+
+              <p class="mt-5 text-gray-600 flex">
+                Contact with me
+                <a href="#contact" title="" class="text-black transition-all duration-200 hover:underline flex ">
+                  Contact
+                  <svg class="ml-3 h-20 w-20 text-gray-600 dark:text-gray-400" width="95" height="55" viewBox="0 0 95 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M44.3484 17.7278L94.0311 9.15294C94.22 9.12034 94.3349 9.35417 94.1936 9.48377L70.849 30.9044C70.8348 30.9174 70.8201 30.9277 70.8025 30.9355C68.8182 31.8155 60.7307 28.5256 56.7228 26.6755C56.6147 26.6255 56.4904 26.6862 56.4588 26.801C55.4512 30.4622 54.1873 33.8785 53.6171 35.2901C53.5831 35.3744 53.4923 35.4249 53.413 35.3804C52.1218 34.6544 51.9767 27.6172 52.0736 23.9118C52.0762 23.8134 52.0052 23.7319 51.908 23.7163C48.8902 23.2336 44.6436 20.4303 42.8682 19.0642" stroke="currentColor" class="stroke-gray-600 dark:stroke-gray-400"></path>
+                    <path d="M57.042 26.1479C62.1467 23.7143 75.0605 17.619 85.8781 12.7074" stroke="currentColor" class="stroke-gray-600 dark:stroke-gray-400"></path>
+                    <path d="M53.1318 35.4342L62.6624 29.3248" stroke="currentColor" class="stroke-gray-600 dark:stroke-gray-400"></path>
+                    <path d="M55.3313 21.5049L68.5275 16.8618" stroke="currentColor" class="stroke-gray-600 dark:stroke-gray-400"></path>
+                    <path d="M47.9354 43.6444C43.0885 46.2633 29.857 49.0618 15.7055 39.3048" stroke="currentColor" class="stroke-green-600 dark:stroke-gray-400"></path>
+                    <path d="M40.7571 37.6396C32.6774 36.4332 13.4793 29.2187 1.32465 10.0121" stroke="currentColor" class="stroke-green-600 dark:stroke-gray-400"></path>
+                  </svg>
+                </a>
+              </p>
+
+              
+            </div>
+
+            <div data-aos="fade-left">
+              <img
+                class="w-full mt-10"
+                src="./images/about.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Features -->
+    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+      <!-- Grid -->
+      <div class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
+        <div data-aos="zoom-in-down">
+          <img
+            class="rounded-xl"
+            src="./images/home-right.png"
+            alt="Image Description"
+          />
+        </div>
+        <!-- End Col -->
+
+        <div class="mt-5 sm:mt-10 lg:mt-0">
+          <div class="space-y-6 sm:space-y-8">
+            <!-- Title -->
+            <div class="space-y-2 md:space-y-4">
+              <h2 id="About"
+                class="font-bold text-3xl lg:text-2xl text-yellow-400 dark:text-yellow-200"
+              >
+                About Me
+              </h2>
+              <h2
+                class="font-bold text-3xl lg:text-4xl text-gray-800 dark:text-gray-200"
+              >
+                I Can Make You The Website You Want
+              </h2>
+              <p class="text-gray-500">
+                Welcome to my portfolio! I'm a full-stack web developer with a
+                passion for building web applications that drive the success of
+                businesses. Take a look at some of my projects in the Projects
+                section to see my work in action. I also enjoy sharing my
+                knowledge and experiences with the web development community.
+                You can find valuable content related to web development and
+                programming on my Linkedin profile. Feel free to connect with me
+                or follow my profile to stay updated on the latest insights and
+                industry trends. I'm always seeking new opportunities to
+                contribute, learn, and grow. If you have a job opportunity that
+                aligns with my skills and experience, don't hesitate to reach
+                out. I'm excited to explore how I can make a positive impact.
+              </p>
+            </div>
+            <!-- End Title -->
+
+            <!-- List -->
+            <ul role="list" class="space-y-2 sm:space-y-4">
+              <li class="flex space-x-3">
+                <span
+                  class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-yellow-50 text-yellow-600 dark:bg-yellow-800/30 dark:text-yellow-500"
+                >
+                  <svg
+                    class="flex-shrink-0 size-3.5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </span>
+
+                <span class="text-sm sm:text-base text-gray-500">
+                  <span class="font-bold">Easy & fast</span> designing
+                </span>
+              </li>
+
+              <li class="flex space-x-3">
+                <span
+                  class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-yellow-50 text-yellow-600 dark:bg-yellow-800/30 dark:text-yellow-500"
+                >
+                  <svg
+                    class="flex-shrink-0 size-3.5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </span>
+
+                <span class="text-sm sm:text-base text-gray-500">
+                  Powerful <span class="font-bold">features</span>
+                </span>
+              </li>
+
+              <li class="flex space-x-3">
+                <span
+                  class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-yellow-50 text-yellow-600 dark:bg-yellow-800/30 dark:text-yellow-500"
+                >
+                  <svg
+                    class="flex-shrink-0 size-3.5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </span>
+
+                <span class="text-sm sm:text-base text-gray-500">
+                  User Experience Design
+                </span>
+              </li>
+            </ul>
+            <!-- End List -->
+          </div>
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Grid -->
+    </div>
+    <!-- End Features -->
+
+    <!--Skills Card-->
+    <!-- Team -->
+    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+      <!-- Title -->
+      <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
+        <h2 id="skills"
+          class="text-2xl font-bold md:text-4xl md:leading-tight text-yellow-400"
+        >
+        Skills And Experience
+        </h2>
+        
+        <h2
+          class="text-2xl font-bold md:text-2xl md:leading-tight text-gray-800"
+        >
+        Why Choose Me?
+        </h2>
+      </div>
+      <!-- End Title -->
+
+      <!-- Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-2 gap-8 md:gap-12">
+        <div class="text-center" data-aos="zoom-in-down">
+          <img
+            class="rounded-xl mx-auto w-56"
+            src="./images/Front-End.png"
+            alt="Image Description"
+          />
+          <div class="mt-2 sm:mt-4">
+            <h3
+              class="text-4xl font-medium text-gray-800 sm:text-4xl lg:text-4xl dark:text-gray-200"
+            >
+              Frond-End
+            </h3>
+            <div
+              class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-gray-400 mt-2"
+            >
+              <span
+                class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg text-xs font-medium bg-[#48a5de] text-white dark:bg-yellow-800"
+                >HTML | CSS</span
+              >
+              <span
+                class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg text-xs font-medium bg-yellow-400 text-white dark:bg-yellow-800/0"
+                >JavaScript</span
+              >
+              <span
+                class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg text-xs font-medium bg-[#40A2E3] text-white dark:bg-yellow-800/0"
+                >ReactJS</span
+              >
+              <span
+                class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg text-xs font-medium bg-yellow-600 text-white dark:bg-yellow-800/0"
+                >Tailwind css</span
+              ><br />
+              <span
+                class="inline-flex mt-5 items-center gap-x-1.5 py-1.5 px-3 rounded-lg text-xs font-medium bg-yellow-600 text-white dark:bg-yellow-800/0"
+                >Figma</span
+              >
+              <span
+                class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg text-xs font-medium bg-[#675dd1] text-white dark:bg-yellow-800/0"
+                >Adobe xd</span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- End Col -->
+
+        <div data-aos="zoom-in-down" class="text-center">
+          <img
+            class="rounded-xl mx-auto w-72"
+            src="./images/Back-End.png"
+            alt="Image Description"
+          />
+          <div class="mt-2 sm:mt-4">
+            <h3
+              class="text-4xl font-medium text-gray-800 sm:text-4xl lg:text-4xl dark:text-gray-200"
+            >
+              Back-End
+            </h3>
+            <div
+            class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-gray-400 mt-2"
+          >
+            <span
+              class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg text-xs font-medium bg-[#E26EE5] text-white dark:bg-yellow-800"
+              >PHP</span
+            >
+            <span
+              class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg text-xs font-medium bg-[#ff2d20] text-white dark:bg-yellow-800/0"
+              >LARAVEL</span
+            >
+            <span
+              class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg text-xs font-medium bg-[#40A2E3] text-white dark:bg-yellow-800/0"
+              >SQL | MSQL</span
+            >
+            <span
+              class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg text-xs font-medium bg-[#07ac4f] text-white dark:bg-yellow-800/0"
+              >Mongo DB</span
+            ><br />
+            <span
+              class="inline-flex mt-5 items-center gap-x-1.5 py-1.5 px-3 rounded-lg text-xs font-medium bg-yellow-600 text-white dark:bg-yellow-800/0"
+              >APIs</span
+            >
+            <span
+              class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg text-xs font-medium bg-[#D63484] text-white dark:bg-yellow-800/0"
+              >VB.net</span
+            >
+            <span
+            class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg text-xs font-medium bg-[#675dd1] text-white dark:bg-yellow-800/0"
+            >Git | GitHub</span
+          >
+          </div>
+        </div>
+          </div>
+        </div>
+        <!-- End Col -->
+      </div>
+    </div>
+
+    <!--end Skills Card-->
+
+    <!--Project-->
+      <!-- Masonry Cards -->
+<div class="max-w-6xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto mt-32">
+      <h2 id="projects"
+          class="text-2xl font-bold md:text-4xl md:leading-tight text-yellow-400 text-center"
+        >
+        Projects
+        </h2>
+        <h2
+          class="text-2xl font-bold md:text-4xl md:leading-tight text-gray-800 text-center"
+        >
+        Take a look at my work
+        </h2>
+  <!-- Grid -->
+  <div class="grid sm:grid-cols-12 gap-6 drop-shadow-lg">
+    <div class="sm:self-end col-span-12 sm:col-span-7 md:col-span-8 lg:col-span-5 lg:col-start-3">
+      <!-- Card -->
+      <a class="group relative block rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
+        <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
+          <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="./images/page1.jpg" alt="Image Description">
+        </div>
+        <div class="absolute bottom-0 start-0 end-0 p-2 sm:p-4">
+          <div class="text-sm font-bold text-gray-800 rounded-lg bg-blue-50 p-4 md:text-xl dark:bg-gray-800 dark:text-gray-200">
+            Home services website
+          </div>
+        </div>
+      </a>
+      <!-- End Card -->
+    </div>
+    <!-- End Col -->
+
+    <div class="sm:self-end col-span-12 sm:col-span-5 md:col-span-4 lg:col-span-3 drop-shadow-lg">
+      <!-- Card -->
+      <a class="group relative block rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
+        <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
+          <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="https://images.unsplash.com/photo-1605629921711-2f6b00c6bbf4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="Image Description">
+        </div>
+        <div class="absolute bottom-0 start-0 end-0 p-2 sm:p-4">
+          <div class="text-sm font-bold text-gray-800 rounded-lg bg-blue-50 p-4 md:text-xl dark:bg-gray-800 dark:text-gray-200">
+            Clothing store
+          </div>
+        </div>
+      </a>
+      <!-- End Card -->
+    </div>
+    <!-- End Col -->
+
+    <div class="col-span-12 md:col-span-4 drop-shadow-lg">
+      <!-- Card -->
+      <a class="group relative block rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
+        <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
+          <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="./images/page2.jpg" alt="Image Description">
+        </div>
+        <div class="absolute bottom-0 start-0 end-0 p-2 sm:p-4">
+          <div class="text-sm font-bold text-gray-800 rounded-lg bg-blue-50 p-4 md:text-xl dark:bg-gray-800 dark:text-gray-200">
+            Home services website
+          </div>
+        </div>
+      </a>
+      <!-- End Card -->
+    </div>
+    <!-- End Col -->
+
+    <div class="col-span-12 sm:col-span-6 md:col-span-4 drop-shadow-lg">
+      <!-- Card -->
+      <a class="group relative block rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
+        <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
+          <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="./images/page4.jpg" alt="Image Description">
+        </div>
+        <div class="absolute bottom-0 start-0 end-0 p-2 sm:p-4">
+          <div class="text-sm font-bold text-gray-800 rounded-lg bg-[#FCF8F1] bg-opacity-80 p-4 md:text-xl dark:bg-gray-800 dark:text-gray-200">
+            Website for registering courses
+          </div>
+        </div>
+      </a>
+      <!-- End Card -->
+    </div>
+    <!-- End Col -->
+
+    <div class="col-span-12 sm:col-span-6 md:col-span-4 drop-shadow-lg">
+      <!-- Card -->
+      <a class="group relative block rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
+        <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
+          <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="./images/page3.jpg" alt="Image Description">
+        </div>
+        <div class="absolute bottom-0 start-0 end-0 p-2 sm:p-4">
+          <div class="text-sm font-bold text-gray-800 rounded-lg bg-blue-50 p-4 md:text-xl dark:bg-gray-800 dark:text-gray-200">
+            Accounting and invoicing software
+          </div>
+        </div>
+      </a>
+      <!-- End Card -->
+    </div>
+    <!-- End Col -->
+  </div>
+  <!-- End Grid -->
+</div>
+<!-- End Masonry Cards -->
+    <!--End Project-->
+
+    <section id="contact" class="py-10 bg-gray-900 sm:py-16 lg:py-24 mt-40">
+      <div class="max-w-6xl px-4 mx-auto sm:px-6 lg:px-8">
+        <div
+          class="grid grid-cols-1 md:items-stretch md:grid-cols-2 gap-x-12 lg:gap-x-20 gap-y-10"
+        >
+          <div class="flex flex-col justify-between lg:py-5">
+            <div>
+              <h2
+                class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:leading-tight lg:text-5xl"
+              >
+                It’s time to build something exciting!
+              </h2>
+              <p
+                class="max-w-xl mx-auto mt-4 text-base leading-relaxed text-white"
+              >
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis.
+              </p>
+
+              <img
+                class="relative z-10 max-w-xs mx-auto -mb-16 md:hidden"
+                src="https://cdn.rareblocks.xyz/collection/celebration/images/contact/4/curve-line-mobile.svg"
+                alt=""
+              />
+
+              <img
+                class="hidden w-full translate-x-24 translate-y-8 md:block"
+                src="https://cdn.rareblocks.xyz/collection/celebration/images/contact/4/curve-line.svg"
+                alt=""
+              />
+            </div>
+
+            <div class="hidden md:mt-auto md:block">
+              <div class="flex items-center">
+                <svg
+                  class="w-6 h-6 text-yellow-400"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg
+                  class="w-6 h-6 text-yellow-400"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg
+                  class="w-6 h-6 text-yellow-400"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg
+                  class="w-6 h-6 text-yellow-400"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg
+                  class="w-6 h-6 text-yellow-400"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+              </div>
+
+              <blockquote class="mt-6">
+                <p class="text-lg leading-relaxed text-white">
+                  You made it that simple. My new website is faster and easier to use. Do not hesitate to send me a message at any time, whatever your inquiry.
+                </p>
+              </blockquote>
+
+              <div class="flex items-center mt-8">
+                <img
+                  class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+                  src="./images/img-contact.jpeg"
+                  alt=""
+                />
+                <div class="ml-4">
+                  <p class="text-base font-semibold text-white">Basil Adra</p>
+                  <p class="mt-px text-sm text-gray-400">
+                    FULL STACK WEB DEVELOPER
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:pl-12">
+            <div class="overflow-hidden bg-white rounded-md w-[500px]" data-aos="zoom-in-left">
+              <div class="p-6 sm:p-10">
+                <h3 class="text-3xl font-semibold text-orange-500">
+                  Let's Talk!
+                </h3>
+
+                
+                  <div class="space-y-6">
+                      <div>
+                          <label for="name" class="text-base font-medium text-gray-900">Your name</label>
+                          <div class="mt-2.5 relative">
+                              <input id="name" name="name" placeholder="Enter your full name" class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-orange-500 focus:border-orange-500 caret-orange-500" />
+                          </div>
+                      </div>
+              
+                      <div>
+                          <label for="email" class="text-base font-medium text-gray-900">Email address</label>
+                          <div class="mt-2.5 relative">
+                              <input id="email" name="email" type="email" placeholder="Enter your email address" class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-orange-500 focus:border-orange-500 caret-orange-500" />
+                          </div>
+                      </div>
+              
+                      <div>
+                          <label for="message" class="text-base font-medium text-gray-900">Project brief</label>
+                          <div class="mt-2.5 relative">
+                              <textarea id="message" name="message" placeholder="Enter your project brief" class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md resize-y focus:outline-none focus:ring-orange-500 focus:border-orange-500 caret-orange-500" rows="4"></textarea>
+                          </div>
+                      </div>
+              
+                      <div>
+                          <button onclick="sendMail()" class="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-white transition-all duration-200 bg-orange-500 border border-transparent rounded-md focus:outline-none hover:bg-orange-600 focus:bg-orange-600">Send Message</button>
+                      </div>
+                  </div>
+                  
+                  <div id="messageBox" class="hidden bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
+                    <strong class="font-bold">Success!</strong>
+                    <span class="block sm:inline" id="messageText">Your Message Sent Successfully</span>
+                    <span class="absolute top-0 bottom-0 right-0 px-4 py-3">
+                      <svg class="fill-current h-6 w-6 text-green-500" role="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>Close</title><path d="M14.348 14.849a1 1 0 0 1-1.414 1.414l-3.536-3.536-3.536 3.536a1 1 0 1 1-1.414-1.414l3.536-3.536-3.536-3.536a1 1 0 1 1 1.414-1.414l3.536 3.536 3.536-3.536a1 1 0 1 1 1.414 1.414l-3.536 3.536 3.536 3.536z"/></svg>
+                    </span>
+                  </div>
+                  
+              
+              </div>
+            </div>
+          </div>
+
+          <div class="md:hidden" >
+            <div class="flex items-center">
+              <svg
+                class="w-6 h-6 text-yellow-400"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                class="w-6 h-6 text-yellow-400"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                class="w-6 h-6 text-yellow-400"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                class="w-6 h-6 text-yellow-400"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                class="w-6 h-6 text-yellow-400"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+            </div>
+
+            <blockquote class="mt-6">
+              <p class="text-lg leading-relaxed text-white">
+                You made it that simple. My new website is faster and easier to use. Do not hesitate to send me a message at any time, whatever your inquiry.
+              </p>
+            </blockquote>
+
+            <div class="flex items-center mt-8">
+              <img
+                class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+                src="./images/img-contact.jpeg"
+                alt=""
+              />
+              <div class="ml-4">
+                <p class="text-base font-semibold text-white">Basil Adra</p>
+                <p class="mt-px text-sm text-gray-400">FULL STACK WEB DEVELOPER</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
+      <!-- Grid -->
+      <div class="text-center justify-center">
+        <center>
+          <a href="#">
+            <img src="./images/BASIL-TITLE.png" class="flex-none text-xl font-semibold text-black dark:text-white dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" >
+          </a>
+        </center>
+        <!-- End Col -->
+    
+        <div class="mt-3">
+          <p class="text-gray-500">I'm Basil Adra  <a class="font-semibold text-blue-600 hover:text-blue-700 dark:text-blue-500 dark:hover:text-blue-400" >A Full Stack Web Developer </a> .</p>
+          <p class="text-gray-500">© Copyright. <span id="myYear"></span>  All rights reserved by Basil adra.</p>
+        </div>
+    
+        <!-- Social Brands -->
+        <div class="mt-3 space-x-2">
+          <a class="inline-flex justify-center items-center size-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800" href="#">
+            <svg class="flex-shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+            </svg>
+          </a>
+          <a class="inline-flex justify-center items-center size-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800" href="#">
+            <svg class="flex-shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+            </svg>
+          </a>
+          <a class="inline-flex justify-center items-center size-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800" href="#">
+            <svg class="flex-shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+          </a>
+          <a class="inline-flex justify-center items-center size-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800" href="#">
+            <svg class="flex-shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z"/>
+            </svg>
+          </a>
+        </div>
+        <!-- End Social Brands -->
+      </div>
+      <!-- End Grid -->
+    </footer>
+
+<button id="scrollToTopButton" class="fixed bottom-4 right-4 p-4 drop-shadow-xl  rounded-full  hidden">
+  <img src="./images/arrow.png" alt="Top" class="w-16 h-16">
+</button>
+            <script>
+            const DYear = new Date();
+                //  console.log(DYear.getFullYear())
+                  document.getElementById('myYear').innerHTML = DYear.getFullYear();
+            const scrollToTopButton = document.getElementById('scrollToTopButton');
+
+            scrollToTopButton.addEventListener('click', function() {
+              window.scrollTo({
+                top: 0,
+                behavior: 'smooth' 
+              });
+            });
+
+            window.addEventListener('scroll', function() {
+              if (window.pageYOffset > 0) {
+                scrollToTopButton.classList.remove('hidden');
+              } else {
+                scrollToTopButton.classList.add('hidden');
+              }
+            });
+        </script>
+  </body>
+</html>
